@@ -8,18 +8,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ChatComponent } from './components/chat/chat.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './components/authentication/authentication.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatComponent
+    ChatComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     ChatService,

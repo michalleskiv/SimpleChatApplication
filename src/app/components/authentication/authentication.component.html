@@ -1,0 +1,10 @@
+<div>
+    <input type="text" [(ngModel)]="user.username">
+    <input type="text" [(ngModel)]="user.password">
+    <button (click)="login()">Log In</button>
+    <button (click)="register()">Register</button>
+</div>
+<div *ngIf="registered">
+    <p style="color: green;" *ngIf="registered">Successfuly registered</p>
+    <p style="color: green;" *ngIf="authenticated">Successfuly logged in</p>
+</div>
